@@ -13,7 +13,7 @@ This app demonstrates
 - The use of AsyncTaskLoader which is used to offload the work of querying feeds from db onto a worker thread 
 helps to keep the UI responsive.
 
-AsyncTaskLoader listens for new feeds available update using broadcastreceiver and loads the new data. 
+- AsyncTaskLoader listens for new feeds available update using broadcastreceiver and loads the new data. 
 
 - AlarmManager with alarm type ELAPSED_REALTIME is used to set a alarm for update interval of 10 minutes. AlarmManager is set with pending intent created to call IntentService.
 
@@ -21,7 +21,8 @@ AsyncTaskLoader listens for new feeds available update using broadcastreceiver a
 
 - Whenever new feed is obtained local broad cast message is sent for the loaders to update the new feeds.
 
+##Design
 ![alt text](https://github.com/smanikandan14/TechCrunchRssFeader/blob/master/art/design.png "")
 
-
+##Screenshot
 ![alt text](https://github.com/smanikandan14/TechCrunchRssFeader/blob/master/art/RssFeeder.png "")
