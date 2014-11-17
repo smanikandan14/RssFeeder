@@ -4,11 +4,11 @@ An Android App to read rss feed from Techcrunch and update the list whenever new
 
 UpdateInterval: 10 minutes 
 
-http://feeds.feedburner.com/TechCrunch/social 
+Feed Url: http://feeds.feedburner.com/TechCrunch/social 
 
 This app demonstrates 
 - How UI is never blocked while fetching the data.
-- If user closes the app before the feed is completely loaded (for the first time) and put it in the background. The app should continue to fetch the data in the background so that if the user reopens the app, the listview is updated without having to re-fetch the data.
+- If user closes the app before the feed is completely loaded (for the first time) and put it in the background. The app will continue to fetch the data in the background so that if the user reopens the app, the listview is updated without having to re-fetch the data.
 
 - The use of AsyncTaskLoader which is used to offload the work of querying feeds from db onto a worker thread 
 helps to keep the UI responsive.
